@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+
+  containercodeunit:
+    image: containercodeunit:0.0.1
+    container_name: 'containercodeunit'
+    volumes:
+      - "./Volumes/Data:/Workspace/Data"
+      - "./Volumes/Configuration:/Workspace/Configuration"
+      - "./Volumes/Logs:/Workspace/Logs"
+    ports:
+      - 443:443

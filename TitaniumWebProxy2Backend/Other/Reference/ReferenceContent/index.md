@@ -1,0 +1,3 @@
+# CCOTImplementationBitcoin reference
+
+TODO

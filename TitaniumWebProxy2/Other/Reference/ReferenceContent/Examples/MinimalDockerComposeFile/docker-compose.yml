@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+
+  webapicontainercodeunit:
+    image: webapicontainercodeunit:0.1.0
+    container_name: 'webapicontainercodeunit'
+    volumes:
+      - "./Volumes/Configuration:/Workspace/Configuration"
+      - "./Volumes/Data:/Workspace/Data"
+      - "./Volumes/Logs:/Workspace/Logs"
+    ports:
+      - "80:80"

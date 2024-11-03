@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Authors>Marius Göcke</Authors>
+        <Version>1.0.1</Version>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <FileVersion>1.0.1</FileVersion>
+        <SelfContained>false</SelfContained>
+        <IsPackable>false</IsPackable>
+        <PreserveCompilationContext>false</PreserveCompilationContext>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <Copyright>Copyright © 2024 Marius Göcke</Copyright>
+        <Description>TitaniumWebProxy2BackendTests is the test-project for TitaniumWebProxy2Backend.</Description>
+        <PackageProjectUrl>https://github.com/anionDev/CommonProjectStructureExamples</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/anionDev/CommonProjectStructureExamples.git</RepositoryUrl>
+        <RootNamespace>TitaniumWebProxy2Backend.Tests</RootNamespace>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+        <Nullable>disable</Nullable>
+        <Configurations>Development;QualityCheck;Productive</Configurations>
+        <IsTestProject>true</IsTestProject>
+        <LangVersion>11.0</LangVersion>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <OutputPath>..\Other\Artifacts\BuildResultTests_DotNet_win-x64</OutputPath>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+        <SignAssembly>True</SignAssembly>
+        <AssemblyOriginatorKeyFile>..\..\Other\Resources\PublicKeys\StronglyNamedKey\TitaniumWebProxy2.snk</AssemblyOriginatorKeyFile>
+        <DelaySign>True</DelaySign>
+        <NoWarn>1701;1702;CA1822;CS1591;CS1573;IDE0045;IDE0046;IDE0054;IDE0058;IDE0074;IDE0090</NoWarn>
+        <WarningsAsErrors>NU1605</WarningsAsErrors>
+        <ErrorLog>..\Other\Resources\CodeAnalysisResult\TitaniumWebProxy2BackendTests.sarif</ErrorLog>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Development'">
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <Optimize>false</Optimize>
+        <DefineConstants>TRACE;DEBUG;Development</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='QualityCheck'">
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <Optimize>false</Optimize>
+        <DefineConstants>TRACE;QualityCheck</DefineConstants>
+        <ErrorReport>none</ErrorReport>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Productive'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+        <DefineConstants>Productive</DefineConstants>
+        <ErrorReport>none</ErrorReport>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\TitaniumWebProxy2Backend\TitaniumWebProxy2Backend.csproj" />
+        <PackageReference Include="coverlet.collector" Version="6.0.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="coverlet.msbuild" Version="6.0.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="GRYLibrary" Version="0.12.116" />
+        <PackageReference Include="ExtendedXmlSerializer" Version="3.8.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+        <PackageReference Include="Microsoft.CodeCoverage" Version="17.11.1" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="8.0.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+        <PackageReference Include="Moq" Version="4.20.72" />
+        <PackageReference Include="MSTest.TestAdapter" Version="3.6.2" />
+        <PackageReference Include="MSTest.TestFramework" Version="3.6.2" />
+        <PackageReference Include="NJsonSchema" Version="11.0.2" />
+        <PackageReference Include="NSwag.AspNetCore" Version="14.1.0" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+        <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+        <PackageReference Include="System.Reactive" Version="6.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.10" />
+    </ItemGroup>
+</Project>

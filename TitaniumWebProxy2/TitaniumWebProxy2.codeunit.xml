@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cps:codeunit xmlns:cps="https://projects.aniondev.de/PublicProjects/Common/ProjectTemplates/-/tree/main/Conventions/RepositoryStructure/CommonProjectStructure" codeunitspecificationversion="2.9.4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://projects.aniondev.de/PublicProjects/Common/ProjectTemplates/-/raw/v2.9.4/Conventions/RepositoryStructure/CommonProjectStructure/codeunit.xsd" enabled="true">
+    <cps:name>TitaniumWebProxy2</cps:name>
+    <cps:version>1.0.1</cps:version>
+    <cps:codeunitownername>Marius Göcke</cps:codeunitownername>
+    <cps:codeunitowneremailaddress>marius.goecke@gmail.com</cps:codeunitowneremailaddress>
+    <cps:properties codeunithastestablesourcecode="false" codeunithasupdatabledependencies="false" throwexceptionifcodeunitfilecannotbevalidated="true" developmentstate="Maintenance-updates only" description="TitaniumWebProxy2 is a containerized variant of TitaniumWebProxy2Backend." >
+        <cps:pipelinedemands>
+        </cps:pipelinedemands>
+        <cps:updatesettings>
+            <cps:ignoreddependencies/>
+        </cps:updatesettings>
+    </cps:properties>
+    <cps:dependentcodeunits>
+        <cps:dependentcodeunit>TitaniumWebProxy2Backend</cps:dependentcodeunit>
+    </cps:dependentcodeunits>
+        <cps:pipelinedemands>
+        </cps:pipelinedemands>
+    <cps:developerteam>
+        <cps:developer>
+            <cps:developername>Marius Göcke</cps:developername>
+            <cps:developeremailaddress>marius.goecke@gmail.com</cps:developeremailaddress>
+        </cps:developer>
+    </cps:developerteam>
+</cps:codeunit>

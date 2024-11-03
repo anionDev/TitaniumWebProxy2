@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitaniumWebProxy2Backend", "TitaniumWebProxy2Backend\TitaniumWebProxy2Backend.csproj", "{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitaniumWebProxy2BackendTests", "TitaniumWebProxy2BackendTests\TitaniumWebProxy2BackendTests.csproj", "{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Any CPU = Development|Any CPU
+		Productive|Any CPU = Productive|Any CPU
+		QualityCheck|Any CPU = QualityCheck|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.Development|Any CPU.Build.0 = Development|Any CPU
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.Productive|Any CPU.ActiveCfg = Productive|Any CPU
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.Productive|Any CPU.Build.0 = Productive|Any CPU
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.QualityCheck|Any CPU.ActiveCfg = QualityCheck|Any CPU
+		{C8683E71-F39A-4C0C-BAE3-619207F9A4DB}.QualityCheck|Any CPU.Build.0 = QualityCheck|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.Development|Any CPU.Build.0 = Development|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.Productive|Any CPU.ActiveCfg = Productive|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.Productive|Any CPU.Build.0 = Productive|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.QualityCheck|Any CPU.ActiveCfg = QualityCheck|Any CPU
+		{740C3BA4-87F3-49A3-95C8-A3CEC80C01BF}.QualityCheck|Any CPU.Build.0 = QualityCheck|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28D8BF90-7864-4881-B658-CE96D6D22744}
+	EndGlobalSection
+EndGlobal
